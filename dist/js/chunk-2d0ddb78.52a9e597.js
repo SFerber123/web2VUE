@@ -1,2 +1,2 @@
 (window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0ddb78"],{8329:function(t,e,n){"use strict";n.r(e);var u=n("7a23"),d=Object(u["e"])("p",null,"Ovako bi izgledao two way binding",-1);function c(t,e,n,c,i,o){return Object(u["p"])(),Object(u["d"])("div",null,[d,Object(u["C"])(Object(u["e"])("input",{"onUpdate:modelValue":e[0]||(e[0]=function(t){return i.tekst=t}),placeholder:"Ovdje upisi tekst"},null,512),[[u["z"],i.tekst]]),Object(u["e"])("p",null,"Ovdje je napisani tekst: "+Object(u["x"])(i.tekst),1)])}var i={data:function(){return{tekst:""}},mounted:function(){}},o=n("6b0d"),a=n.n(o);const l=a()(i,[["render",c]]);e["default"]=l}}]);
-//# sourceMappingURL=chunk-2d0ddb78.5bd646ab.js.map
+//# sourceMappingURL=chunk-2d0ddb78.52a9e597.js.map
