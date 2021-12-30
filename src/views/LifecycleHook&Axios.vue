@@ -2,15 +2,21 @@
   <div>
         <p>Lifecycle hook primjer</p>
        
-        <p>Data: {{startTime}}</p>
+        <p>Mijenjanje vremena: {{startTime}}</p>
+
+        <p>Dohvaćeni podatak axios-om: {{data}}</p>
+
+        
   </div>
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data () {
     return {
       startTime: null,
+      data:null
     }
   },
   mounted() {
@@ -19,7 +25,7 @@ export default {
        },1000);
   },
   created(){
-
+      axios.get('/getData').then(response=>this.data=response.data);
   },
 }
 </script>

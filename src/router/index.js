@@ -47,9 +47,9 @@ const routes = [
     component:()=> import("../components/NotFound.vue"),
   },
   {
-    path: "/lifecycleHook",
+    path: "/lifecycleHook&Axios",
     name:"LifecycleHook",
-    component: () => import("../views/LifecycleHook.vue"),
+    component: () => import("../views/LifecycleHook&Axios.vue"),
   },
 ];
 
