@@ -19,7 +19,7 @@ const routes = [
   {
     path: "/one_way_binding",
     name: "OneWayBinding",
-    component: import("../views/OneWayBinding.vue"),
+    component: import("/src/views/OneWayBinding.vue"),
   },
   {
     path: "/two_way_binding",
