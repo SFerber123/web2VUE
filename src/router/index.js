@@ -19,37 +19,37 @@ const routes = [
   {
     path: "/one_way_binding",
     name: "OneWayBinding",
-    component: import("/src/views/OneWayBinding.vue"),
+    component:() =>  import("/src/views/OneWayBinding.vue"),
   },
   {
     path: "/two_way_binding",
     name: "TwoWayBinding",
-    component: import("../views/TwoWayBinding.vue"),
+    component: () => import("/src/views/TwoWayBinding.vue"),
   },
   {
     path: "/methods",
     name: "Methods",
-    component: import("../views/Methods.vue"),
+    component: () => import("../views/Methods.vue"),
   },
   {
     path: "/computed",
     name: "Computed",
-    component: import("../views/Computed.vue"),
+    component:()=> import("../views/Computed.vue"),
   },
   {
     path: "/scoped",
     name: "Scoped",
-    component: import("../views/ScopedStyle.vue"),
+    component:()=> import("../views/ScopedStyle.vue"),
   },
   {
     path: "/:catchAll(.*)",
     name:"NotFound",
-    component: import("../components/NotFound.vue"),
+    component:()=> import("../components/NotFound.vue"),
   },
   {
     path: "/lifecycleHook",
     name:"LifecycleHook",
-    component: import("../views/LifecycleHook.vue"),
+    component: () => import("../views/LifecycleHook.vue"),
   },
 ];
 

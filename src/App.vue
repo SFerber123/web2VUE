@@ -8,7 +8,7 @@
     <router-link to="/scoped">Scoped Style</router-link> |
     <router-link to="/lifecycleHook">Lifecycle Hook</router-link>
   </div>
-  <router-view />
+  <router-view/>
 </template>
 
 <style>

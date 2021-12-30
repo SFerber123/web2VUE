@@ -1,23 +1,23 @@
-var express = require('express')
-var history = require('connect-history-api-fallback')
-var path = require('path')
-var serveStatic = require('serve-static')
+const express = require('express')
+const path = require('path')
+const history = require('connect-history-api-fallback')
 
+const app = express()
 
-var app = express()
+const staticFileMiddleware = express.static(path.join(__dirname + '/dist'))
 
-// Use a fallback for non-root routes (required for Vue router)
-//   NOTE: History fallback must be "used" before the static serving middleware!
+app.use(staticFileMiddleware)
 app.use(history({
-    // OPTIONAL: Includes more verbose logging
-    verbose: true
+  disableDotRule: true,
+  verbose: true
 }))
+app.use(staticFileMiddleware)
 
-// Serve static assets from the build files (images, etc)
-app.use(serveStatic(path.join(__dirname, '/dist')))
+app.get('/', function (req, res) {
+  res.render(path.join(__dirname + '/dist/index.html'))
+})
 
-var port = process.env.PORT || 5000
-
-app.listen(port, () => {
-  console.log('Server started at http://localhost:5000')
+var server = app.listen(process.env.PORT || 8080, function () {
+  var port = server.address().port
+  console.log('App now running on port', port)
 })
