@@ -24,8 +24,13 @@ export default {
          this.startTime=new Date().toLocaleTimeString("hr-HR");
        },1000);
   },
+  methods: {
+    async getData(){
+        await axios.get('/getData').then(response=>this.data=response.data);
+    }
+  },
   created(){
-      axios.get('/getData').then(response=>this.data=response.data);
+      this.getData();
   },
 }
 </script>
