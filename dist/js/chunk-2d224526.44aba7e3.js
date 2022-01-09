@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d224526"],{e049:function(e,t,n){"use strict";n.r(t);var o=n("7a23");function c(e,t){return Object(o["p"])(),Object(o["d"])("p",null,"Ovo je tekst dovućen iz store-a: "+Object(o["x"])(e.$store.state.text),1)}var r=n("6b0d"),s=n.n(r);const u={},a=s()(u,[["render",c]]);t["default"]=a}}]);
+//# sourceMappingURL=chunk-2d224526.44aba7e3.js.map

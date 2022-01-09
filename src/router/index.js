@@ -50,6 +50,10 @@ const routes = [
     path: "/lifecycleHook&Axios",
     name:"LifecycleHook",
     component: () => import("../views/LifecycleHook&Axios.vue"),
+  },{
+    path: "/store",
+    name:"StoreEx",
+    component: () => import("../views/StoreEx.vue"),
   },
 ];
 

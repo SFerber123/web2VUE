@@ -6,7 +6,8 @@
     <router-link to="/methods">Methods</router-link> |
     <router-link to="/computed">Computed property</router-link> |
     <router-link to="/scoped">Scoped Style</router-link> |
-    <router-link to="/lifecycleHook&Axios">Lifecycle Hook & Axios</router-link>
+    <router-link to="/lifecycleHook&Axios">Lifecycle Hook & Axios</router-link> |
+     <router-link to="/store">Store</router-link>
   </div>
   <router-view/>
 </template>

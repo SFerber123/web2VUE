@@ -1,8 +1,14 @@
 import { createStore } from "vuex";
-
 export default createStore({
-  state: {},
-  mutations: {},
-  actions: {},
+  state: {
+    text:"Store tekst"
+  },
+  mutations: {
+    setText(state,text){
+      state.text=text;
+    }
+  },
+  actions: {
+  },
   modules: {},
 });
